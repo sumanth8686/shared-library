@@ -10,6 +10,8 @@ class K8s {
     def auth_login() {
         jenkins.sh """#!/bin/bash
         echo "entering authentication method for Gke cluster login"
+        gcloud config set account <service account id>
+        gcloud compute instances list
         
         """
 
