@@ -5,8 +5,8 @@ import com.i27academy.buid.docker
 def call(Map pipelineParams) {
     Docker docker = new Docker(this)
     pipeline {
-    agent {
-    label 'k8s-slave'
+      agent {
+      label 'k8s-slave'
   }
 
   parameters {
