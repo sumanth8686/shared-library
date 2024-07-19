@@ -6,6 +6,11 @@ class Docker {
         this.jenkins = jenkins
     }
 
+    def add(firstNumber, secondNumber) {
+        // logic 
+        return firstNumber+secondNumber
+    }
+
     //application build
     //docker build
 
@@ -16,5 +21,6 @@ class Docker {
         sh "mvn clean package -DskipTests=true"
         """
     }
+
 
 }
