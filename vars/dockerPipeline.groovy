@@ -1,6 +1,6 @@
 // now we need to call docker method mentioned in src folder
 
-import com.i27academy.buid.docker
+import com.i27academy.build.docker
 
 def call(Map pipelineParams) {
     Docker docker = new Docker(this)
